@@ -1,0 +1,15 @@
+[theme]
+# The main accent color (used for primary buttons, sliders, etc.)
+primaryColor = "#FF9EBB"
+
+# The main background color of the app
+backgroundColor = "#FFF5F7"
+
+# The background color for sidebars and input widgets
+secondaryBackgroundColor = "#FFE6EA"
+
+# The text color (kept dark gray for good readability against the pastels)
+textColor = "#4A4A4A"
+
+# Font style (options: "sans serif", "serif", "monospace")
+font = "sans serif"
