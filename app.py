@@ -237,8 +237,7 @@ if st.session_state.dark_mode:
     """, unsafe_allow_html=True)
 
 # --- CONFIGURATION ---
-API_KEY = "AIzaSyAbYr3DnOzV8yMj7dNvcbKDB6MYD14m4ro"
-genai.configure(api_key=API_KEY)
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 model = genai.GenerativeModel('gemini-2.5-flash')
 
 pastel_colors = [
