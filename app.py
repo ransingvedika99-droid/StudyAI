@@ -309,8 +309,8 @@ def extract_video_id(url):
 
 def get_transcript(video_id):
     try:
-        ytt_api = YouTubeTranscriptApi()
-        return " ".join([d['text'] for d in ytt_api.fetch(video_id).to_raw_data()])
+        transcript_data = YouTubeTranscriptApi.get_transcript(video_id, languages=['hi', 'en', 'en-IN'])
+        return " ".join([d['text'] for d in transcript_data])
     except Exception as e:
         return str(e)
 
