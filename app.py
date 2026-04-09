@@ -543,7 +543,7 @@ with main_box:
     with col1: 
         # This invisible spacer pushes the logo down just enough to stop the top from cropping
         st.markdown("<div style='margin-top: 12px;'></div>", unsafe_allow_html=True)
-        st.image("logo.png", width=80) 
+        st.image("logo.png", width=200) 
         
     with col2: 
         # Added 'class="main-title"' so dark mode can turn it white, and adjusted padding to align with the logo
